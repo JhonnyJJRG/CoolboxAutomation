@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="29" passed="29" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-03-27T23:37:07 PET" name="Surefire suite" finished-at="2026-03-27T23:37:07 PET" duration-ms="86">
+    <groups>
+    </groups>
+    <test started-at="2026-03-27T23:37:07 PET" name="Surefire tests" finished-at="2026-03-27T23:37:07 PET" duration-ms="86">
+      <class name="com.lab.app.DiscountServiceTest">
+        <test-method signature="case1_noVip_noBigPurchase()[pri:0, instance:com.lab.app.DiscountServiceTest@6fb365ed]" started-at="2026-03-27T23:37:07 PET" name="case1_noVip_noBigPurchase" finished-at="2026-03-27T23:37:07 PET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- case1_noVip_noBigPurchase -->
+        <test-method signature="case2_noVip_bigPurchase()[pri:0, instance:com.lab.app.DiscountServiceTest@6fb365ed]" started-at="2026-03-27T23:37:07 PET" name="case2_noVip_bigPurchase" finished-at="2026-03-27T23:37:07 PET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- case2_noVip_bigPurchase -->
+        <test-method signature="case4_vip_bigPurchase()[pri:0, instance:com.lab.app.DiscountServiceTest@6fb365ed]" started-at="2026-03-27T23:37:07 PET" name="case4_vip_bigPurchase" finished-at="2026-03-27T23:37:07 PET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- case4_vip_bigPurchase -->
+        <test-method signature="case3_vip_noBigPurchase()[pri:0, instance:com.lab.app.DiscountServiceTest@6fb365ed]" started-at="2026-03-27T23:37:07 PET" name="case3_vip_noBigPurchase" finished-at="2026-03-27T23:37:07 PET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- case3_vip_noBigPurchase -->
+      </class> <!-- com.lab.app.DiscountServiceTest -->
+      <class name="com.lab.app.UserServiceTest">
+        <test-method signature="edadInvalidaMayor65()[pri:0, instance:com.lab.app.UserServiceTest@6995bf68]" started-at="2026-03-27T23:37:07 PET" name="edadInvalidaMayor65" finished-at="2026-03-27T23:37:07 PET" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- edadInvalidaMayor65 -->
+        <test-method signature="edadInvalidaMenor18()[pri:0, instance:com.lab.app.UserServiceTest@6995bf68]" started-at="2026-03-27T23:37:07 PET" name="edadInvalidaMenor18" finished-at="2026-03-27T23:37:07 PET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- edadInvalidaMenor18 -->
+        <test-method signature="edadValida()[pri:0, instance:com.lab.app.UserServiceTest@6995bf68]" started-at="2026-03-27T23:37:07 PET" name="edadValida" finished-at="2026-03-27T23:37:07 PET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- edadValida -->
+      </class> <!-- com.lab.app.UserServiceTest -->
+      <class name="com.lab.app.LoginServiceTest">
+        <test-method signature="blockedLoginServiceShouldNotChange()[pri:0, instance:com.lab.app.LoginServiceTest@525575]" started-at="2026-03-27T23:37:07 PET" name="blockedLoginServiceShouldNotChange" finished-at="2026-03-27T23:37:07 PET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- blockedLoginServiceShouldNotChange -->
+        <test-method signature="shouldBlockAfterThreeFailures()[pri:0, instance:com.lab.app.LoginServiceTest@525575]" started-at="2026-03-27T23:37:07 PET" name="shouldBlockAfterThreeFailures" finished-at="2026-03-27T23:37:07 PET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldBlockAfterThreeFailures -->
+        <test-method signature="shouldIncreaseAttempts()[pri:0, instance:com.lab.app.LoginServiceTest@525575]" started-at="2026-03-27T23:37:07 PET" name="shouldIncreaseAttempts" finished-at="2026-03-27T23:37:07 PET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldIncreaseAttempts -->
+        <test-method signature="shouldResetAttemptsOnSuccess()[pri:0, instance:com.lab.app.LoginServiceTest@525575]" started-at="2026-03-27T23:37:07 PET" name="shouldResetAttemptsOnSuccess" finished-at="2026-03-27T23:37:07 PET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldResetAttemptsOnSuccess -->
+      </class> <!-- com.lab.app.LoginServiceTest -->
+      <class name="com.lab.app.PedidoTest">
+        <test-method signature="debeAplicarDescuentoSiMontoMayor100()[pri:0, instance:com.lab.app.PedidoTest@3549bca9]" started-at="2026-03-27T23:37:07 PET" name="debeAplicarDescuentoSiMontoMayor100" finished-at="2026-03-27T23:37:07 PET" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- debeAplicarDescuentoSiMontoMayor100 -->
+        <test-method signature="debeAplicarDescuentoVIP()[pri:0, instance:com.lab.app.PedidoTest@3549bca9]" started-at="2026-03-27T23:37:07 PET" name="debeAplicarDescuentoVIP" finished-at="2026-03-27T23:37:07 PET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- debeAplicarDescuentoVIP -->
+        <test-method signature="noDebePermitirComprarConTotalCero()[pri:0, instance:com.lab.app.PedidoTest@3549bca9]" started-at="2026-03-27T23:37:07 PET" name="noDebePermitirComprarConTotalCero" finished-at="2026-03-27T23:37:07 PET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- noDebePermitirComprarConTotalCero -->
+      </class> <!-- com.lab.app.PedidoTest -->
+      <class name="com.lab.app.PaymentServiceTest">
+        <test-method signature="case1()[pri:0, instance:com.lab.app.PaymentServiceTest@74bada02]" started-at="2026-03-27T23:37:07 PET" name="case1" finished-at="2026-03-27T23:37:07 PET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- case1 -->
+        <test-method signature="case2()[pri:0, instance:com.lab.app.PaymentServiceTest@74bada02]" started-at="2026-03-27T23:37:07 PET" name="case2" finished-at="2026-03-27T23:37:07 PET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- case2 -->
+        <test-method signature="case4()[pri:0, instance:com.lab.app.PaymentServiceTest@74bada02]" started-at="2026-03-27T23:37:07 PET" name="case4" finished-at="2026-03-27T23:37:07 PET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- case4 -->
+        <test-method signature="case3()[pri:0, instance:com.lab.app.PaymentServiceTest@74bada02]" started-at="2026-03-27T23:37:07 PET" name="case3" finished-at="2026-03-27T23:37:07 PET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- case3 -->
+        <test-method signature="case6()[pri:0, instance:com.lab.app.PaymentServiceTest@74bada02]" started-at="2026-03-27T23:37:07 PET" name="case6" finished-at="2026-03-27T23:37:07 PET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- case6 -->
+        <test-method signature="case5()[pri:0, instance:com.lab.app.PaymentServiceTest@74bada02]" started-at="2026-03-27T23:37:07 PET" name="case5" finished-at="2026-03-27T23:37:07 PET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- case5 -->
+        <test-method signature="case8_validPurchase()[pri:0, instance:com.lab.app.PaymentServiceTest@74bada02]" started-at="2026-03-27T23:37:07 PET" name="case8_validPurchase" finished-at="2026-03-27T23:37:07 PET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- case8_validPurchase -->
+        <test-method signature="case7()[pri:0, instance:com.lab.app.PaymentServiceTest@74bada02]" started-at="2026-03-27T23:37:07 PET" name="case7" finished-at="2026-03-27T23:37:07 PET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- case7 -->
+        <test-method signature="shouldNotProcess1001Amount()[pri:0, instance:com.lab.app.PaymentServiceTest@74bada02]" started-at="2026-03-27T23:37:07 PET" name="shouldNotProcess1001Amount" finished-at="2026-03-27T23:37:07 PET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldNotProcess1001Amount -->
+        <test-method signature="shouldNotProcessZeroAmount()[pri:0, instance:com.lab.app.PaymentServiceTest@74bada02]" started-at="2026-03-27T23:37:07 PET" name="shouldNotProcessZeroAmount" finished-at="2026-03-27T23:37:07 PET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldNotProcessZeroAmount -->
+        <test-method signature="shouldNotProcessNegativeAmount()[pri:0, instance:com.lab.app.PaymentServiceTest@74bada02]" started-at="2026-03-27T23:37:07 PET" name="shouldNotProcessNegativeAmount" finished-at="2026-03-27T23:37:07 PET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldNotProcessNegativeAmount -->
+        <test-method signature="shouldProcessPositive1Amount()[pri:0, instance:com.lab.app.PaymentServiceTest@74bada02]" started-at="2026-03-27T23:37:07 PET" name="shouldProcessPositive1Amount" finished-at="2026-03-27T23:37:07 PET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldProcessPositive1Amount -->
+        <test-method signature="shouldProcessPositiveAmount()[pri:0, instance:com.lab.app.PaymentServiceTest@74bada02]" started-at="2026-03-27T23:37:07 PET" name="shouldProcessPositiveAmount" finished-at="2026-03-27T23:37:07 PET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldProcessPositiveAmount -->
+        <test-method signature="testCalcularPrecio()[pri:0, instance:com.lab.app.PaymentServiceTest@74bada02]" started-at="2026-03-27T23:37:07 PET" name="testCalcularPrecio" finished-at="2026-03-27T23:37:07 PET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCalcularPrecio -->
+        <test-method signature="testCalcularPrecioCero()[pri:0, instance:com.lab.app.PaymentServiceTest@74bada02]" started-at="2026-03-27T23:37:07 PET" name="testCalcularPrecioCero" finished-at="2026-03-27T23:37:07 PET" duration-ms="0" status="PASS">
+          <exception class="java.lang.Exception">
+            <message>
+              <![CDATA[Error]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Exception: Error
+at com.lab.app.PaymentService.calcularTotal(PaymentService.java:42)
+at com.lab.app.PaymentServiceTest.testCalcularPrecioCero(PaymentServiceTest.java:80)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Exception -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCalcularPrecioCero -->
+      </class> <!-- com.lab.app.PaymentServiceTest -->
+    </test> <!-- Surefire tests -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
