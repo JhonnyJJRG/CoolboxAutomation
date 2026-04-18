@@ -1,7 +1,0 @@
-GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
-qa-testing-lab,com.lab.app,LoginService,18,40,8,6,2,13,5,7,1,4
-qa-testing-lab,com.lab.app,AccountState,0,15,0,0,0,3,0,1,0,1
-qa-testing-lab,com.lab.app,Pedido,4,43,3,5,0,12,3,4,0,3
-qa-testing-lab,com.lab.app,DiscountService,0,19,0,8,0,5,0,6,0,2
-qa-testing-lab,com.lab.app,PaymentService,47,63,14,16,7,15,10,11,1,5
-qa-testing-lab,com.lab.app,UserService,10,13,4,4,1,2,3,4,1,2

@@ -1,0 +1,11 @@
+# Ignorar reportes y carpetas temporales de Maven
+/target/
+*.class
+
+# Ignorar archivos basura de Mac (los que salían en tu lista)
+.DS_Store
+__MACOSX/
+
+# Ignorar configuración personal del IDE
+.idea/
+*.iml
