@@ -90,10 +90,10 @@ public class LoginTest {
                         By.xpath("//*[contains(text(),'Hola')]")
                 ));
 
-                // mantenemos tu lógica de JS (aunque no es necesario, pero lo dejamos)
+
                 ((JavascriptExecutor) driver).executeScript("arguments[0].click();", imgPerfil);
 
-                // reemplazo del botón cerrar sesión por validación de usuario
+
                 wait.until(ExpectedConditions.visibilityOfElementLocated(
                         By.xpath("//*[contains(text(),'Hola')]")
                 ));
