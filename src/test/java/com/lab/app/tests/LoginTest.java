@@ -18,18 +18,18 @@ public class LoginTest {
 
     @BeforeEach
     public void setUp() {
-        // 1. Inicialización: Se ejecuta ANTES de cada test para su correcta prueba
+
         driver = new ChromeDriver();
         driver.manage().window().maximize();
 
-        // Configuración de esperas globales
+
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         driver.get("https://www.coolbox.pe/");
     }
 
     public void realizarLogin(String email, String password) {
-        // 1. Cerrar popup inicial si aparece
+
         try {
             WebElement closePopup = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("button[class*='close']")));
             closePopup.click();
@@ -37,13 +37,11 @@ public class LoginTest {
             System.out.println("No apareció popup");
         }
 
-        // 2. Click en botón "Iniciar sesión"
         WebElement btnMiCuenta = wait.until(ExpectedConditions.elementToBeClickable(
                 By.xpath("//button[@data-gtm='button-login']")
         ));
         btnMiCuenta.click();
 
-        // 3. Esperar campos
         WebElement inputEmail = wait.until(ExpectedConditions.visibilityOfElementLocated(
                 By.id("email")
         ));
@@ -56,7 +54,7 @@ public class LoginTest {
         inputPass.sendKeys(password);
 
 
-        // 4. Click login
+
         WebElement btnSubmit = wait.until(ExpectedConditions.elementToBeClickable(
                 By.cssSelector("button[data-gtm='submit-login']")
         ));
@@ -113,7 +111,6 @@ public class LoginTest {
                 By.xpath("//*[contains(text(),'Hola')]")
         ));
 
-        // 3. Aserción: Si el elemento es visible, el test pasa
         Assertions.assertTrue(btnCerrarSesion.isDisplayed(), "ERROR: El botón de cerrar sesión no es visible, el login pudo fallar.");
 
         System.out.println("LOG: Login exitoso verificado mediante el botón Cerrar Sesión.");
