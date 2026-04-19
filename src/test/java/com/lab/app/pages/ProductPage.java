@@ -80,6 +80,5 @@ public class ProductPage {
 
         wait.until(ExpectedConditions.urlContains("checkout"));
 
-        System.out.println("Flujo completo OK");
     }
 }
