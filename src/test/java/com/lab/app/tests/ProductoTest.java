@@ -1,7 +1,7 @@
 package com.lab.app.tests;
 
 import com.lab.app.pages.ProductPage;
-import com.lab.app.pages.CartPage; // IMPORTANTE: Importamos la nueva página
+import com.lab.app.pages.CartPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-// IMPORTACIONES EXCLUSIVAS DE TESTNG (Limpiamos las de JUnit)
+
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -52,7 +52,7 @@ public class ProductoTest {
         )).click();
     }
 
-    // En TestNG, la descripción va dentro de la etiqueta @Test
+
     @Test(description = "Flujo completo: Login + Compra")
     public void testFlujoCompleto() {
 
