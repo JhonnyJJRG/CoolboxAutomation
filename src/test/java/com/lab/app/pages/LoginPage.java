@@ -1,5 +1,4 @@
-package com.lab.app.pages;
-
+import com.lab.app.pages.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -12,7 +11,7 @@ public class LoginPage extends BasePage {
     By inputPassword = By.id("pass");
     By btnLogin = By.id("send2");
 
-    // 🔥 Nuevo: manejo de error
+
     By mensajeError = By.xpath("//div[contains(@class,'error')]");
 
     public LoginPage(WebDriver driver) {
@@ -32,7 +31,7 @@ public class LoginPage extends BasePage {
         driver.findElement(btnLogin).click();
     }
 
-    // 🔥 Nuevo método (POM correcto)
+
     public String obtenerError() {
         wait.until(ExpectedConditions.visibilityOfElementLocated(mensajeError));
         return driver.findElement(mensajeError).getText();

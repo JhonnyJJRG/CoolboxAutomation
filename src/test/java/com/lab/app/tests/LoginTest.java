@@ -1,9 +1,6 @@
 package com.lab.app.tests;
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.DisplayName;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.Test;
+import org.junit.jupiter.api.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -11,7 +8,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.BeforeMethod;
 
 import java.time.Duration;
 
@@ -20,7 +16,7 @@ public class LoginTest {
     private WebDriver driver;
     private WebDriverWait wait;
 
-    @BeforeMethod
+    @BeforeEach
     public void setUp() {
         // 1. Inicialización: Se ejecuta ANTES de cada test para su correcta prueba
         driver = new ChromeDriver();
@@ -71,11 +67,13 @@ public class LoginTest {
     @DisplayName("Prueba de Login Fallido")
     public void testLoginConCredentialsInvalid() {
         realizarLogin("correo_falso@test.com", "Metro123$$");
-        boolean loginVisible = wait.until(ExpectedConditions.visibilityOfElementLocated(
-                By.id("email")
-        )).isDisplayed();
 
-        Assertions.assertTrue(loginVisible, "Error: El login desapareció, algo está mal");
+        WebElement emailInput = wait.until(
+                ExpectedConditions.visibilityOfElementLocated(By.id("email"))
+        );
+
+        Assertions.assertTrue(emailInput.isDisplayed(),
+                "Error: El formulario de login no se mostró");
 
         System.out.println("Prueba Negativa: Pasó");
     }
@@ -122,7 +120,7 @@ public class LoginTest {
         System.out.println("Prueba Positiva: Pasó");
     }
 
-    @AfterMethod
+    @AfterEach
     public void tearDown() {
         if (driver != null) {
             driver.quit();
